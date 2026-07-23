@@ -80,7 +80,7 @@ const courseData = {
       tag: "Break",
       titleEn: "Coffee & Networking Break",
       titleZh: "咖啡与社交茶歇",
-      duration: 30, // seconds for timer demonstration
+      duration: 900, // 15 minutes (900 seconds)
       videoUrl: null, // Indicates coffee break (show screen & timer)
       overviewEn: "A short 15-minute break to stretch, grab some coffee, and network with your postgraduate peers and workshop hosts.",
       overviewZh: "一个短暂的 15 分钟茶歇，伸展一下身体，喝杯咖啡，并与您的研究生同行和工作坊主持人进行交流。",
