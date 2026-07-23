@@ -27,7 +27,7 @@ const courseData = {
       titleEn: "Introduction & Housekeeping: The AI Teaching Assistant Revolution",
       titleZh: "导言与会务说明：AI 助教革命",
       duration: 76, // seconds for testing convenience (normally 1200 / 20 mins)
-      videoUrl: "https://docs.google.com/videos/d/1luM82AxzNOoRNMpXMxo7WOjk6zSNxJlG4PudVPC3998/play?usp=sharing",
+      videoUrl: "https://docs.google.com/videos/d/1Eb_yCegKRHGDyr3xq276nU5DnWWUuS4rpGV3HIBp8JQ/play?usp=sharing",
       overviewEn: "Setting the stage for postgraduate students and future educators. This session covers a quick interactive poll on AI usage in lesson planning, followed by an overview of shifting from general chatbots to source-grounded and persona-based educational agents.",
       overviewZh: "为研究生及未来的教师奠定基础。本节内容包括关于教案设计中 AI 使用情况的快速互动投票，随后概述如何从通用聊天机器人转向来源扎实且基于特定角色的教育智能体。",
       resources: [
