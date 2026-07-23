@@ -125,7 +125,7 @@ const courseData = {
       titleEn: "Concluding & Discussion: Ethics, Guardrails & Future Classrooms",
       titleZh: "总结与讨论：伦理、安全网与未来课堂",
       duration: 55, // seconds
-      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutback.mp4",
+      videoUrl: "https://drive.google.com/file/d/1TjTQGC3nmO1lqFO-HcTrw_x4tpJEqfYd/view?usp=sharing",
       overviewEn: "Rapid-fire showcase of student-designed Gems and syllabus guidelines. The session concludes with a panel discussion on pedagogical ethics, AI-driven assessment integrity, establishing classroom guardrails, and an open Q&A forum.",
       overviewZh: "学生设计的 Gems 和教学大纲指南的快速展示。本节最后将举行关于教学伦理、AI 驱动评估的诚信度、建立课堂防线以及开放式问答论坛的小组讨论。",
       resources: [
