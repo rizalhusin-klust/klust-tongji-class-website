@@ -35,12 +35,15 @@ const courseData = {
         { name: "KLUST AI Education Guidelines", url: "https://klust.edu.my/", type: "link" }
       ],
       transcript: [
-        { time: 0, textEn: "Welcome to this video on implementing source-grounded pedagogy using NotebookLM. We will guide you through a structured, hands-on workflow for your practice exercise.", textZh: "欢迎收看这期关于使用 NotebookLM 实施基于信源教学法的视频。我们将引导您完成一个结构化的、亲自动手的实践练习工作流。" },
-        { time: 8, textEn: "This session focuses on mastering an end-to-end studio workflow. You will gain experience in active document ingestion and generating reviews, moving from initial setup to verifying inline citations for reliable output.", textZh: "本节的重点是掌握端到端的工坊工作流。您将获得主动文档导入和生成评审的经验，从初始设置一直到验证行内引用以确保输出的可靠性。" },
-        { time: 23, textEn: "Step 1 is to prepare your workspace. Begin by opening NotebookLM, creating a new dedicated notebook for your module, and uploading your syllabus and core reference PDFs.", textZh: "第一步是准备您的工作区。首先打开 NotebookLM，为您的模块创建一个新的专用笔记本，并上传您的教学大纲 and 核心参考 PDF。" },
-        { time: 33, textEn: "In step 2, you will generate your study materials. Start by formulating prompts for specific learning outcomes, request a structural summary based on your sources, and finally, verify all citations to ensure accuracy.", textZh: "第二步，您将生成学习材料。首先针对特定的学习成果设计提示词，要求系统根据您的源材料生成结构化摘要，最后验证所有引用以确保准确性。" },
-        { time: 47, textEn: "For step 3, we will engage in active practice. You will have a 10-minute timer for your tasks. Please follow the provided lab documentation closely, and feel free to ask for assistance.", textZh: "第三步，我们将进行主动实践。您将有 10 分钟的时间来完成任务。请密切遵循提供的实验文档指南，如有疑问，请随时寻求协助。" },
-        { time: 58, textEn: "To wrap up, here are some final recommendations: ensure your files are in a compatible format, and remember that clear document structuring with headings will significantly improve the precision of your results.", textZh: "最后，这里有一些最终建议：确保您的文件格式兼容，并记住，带有清晰标题的文档结构将显著提高摘要结果的准确性。" }
+        { time: 0, textEn: "Hello everyone, and welcome to the KLUST-Tongji Masterclass on AI-Powered Pedagogy.", textZh: "大家好，欢迎来到 KLUST-同济 AI 智能教学大师课。" },
+        { time: 5, textEn: "In this workshop, we will explore three key tools: NotebookLM, Gemini Gems, and Workspace Canvas.", textZh: "在本次工作坊中，我们将探索三个核心工具：NotebookLM、Gemini Gems 和 Workspace Canvas。" },
+        { time: 11, textEn: "Our focus today is shifting from generic search engines to source-grounded learning aids.", textZh: "我们今天的重点是从通用的搜索引擎转向基于信源的辅助学习工具。" },
+        { time: 17, textEn: "We want to build systems that act as co-teachers, helping us prepare courses and support students.", textZh: "我们希望构建能够充当“助教”的系统，帮助我们准备课程并支持学生。" },
+        { time: 24, textEn: "Let us start by looking at how AI is transforming classrooms and reducing lesson planning workloads.", textZh: "让我们首先来看看 AI 如何变革课堂并减轻教案设计的负担。" },
+        { time: 31, textEn: "Remember, the goal is not to replace human instruction, but to amplify its effectiveness.", textZh: "请记住，我们的目标不是取代人类教学，而是放大其效果。" },
+        { time: 38, textEn: "We will check how personalized education can become scalable and highly interactive.", textZh: "我们将看看个性化教育如何实现规模化和高度互动。" },
+        { time: 45, textEn: "Let's review the session roadmap and get ready for our hands-on labs.", textZh: "让我们一起来看一下课程路线图，为我们的动手实验做好准备。" },
+        { time: 52, textEn: "I encourage you to participate in our live polls throughout this session. Let's begin!", textZh: "我鼓励大家在整个课程中积极参与我们的实时投票。让我们开始吧！" }
       ]
     },
     {
@@ -48,7 +51,7 @@ const courseData = {
       tag: "Session 2",
       titleEn: "Gemini Notebook (NotebookLM) & Source-Grounded AI",
       titleZh: "Gemini 笔记 (NotebookLM) 与信源扎实型 AI",
-      duration: 85, // seconds for testing
+      duration: 71, // seconds matching the actual video length
       videoUrl: "https://drive.google.com/file/d/198FI9VuESg3u9muvx-ZZa5NkuvOY3zIh/view?usp=sharing",
       overviewEn: "Turn your graduate research papers and curriculum guidelines into an active co-teacher. This session guides participants through NotebookLM setup, source document uploading, literature synthesis, and creating interactive quizzes directly from source texts.",
       overviewZh: "将您的研究生研究论文和课程大纲转化为活跃的“合作教师”。本节将指导参与者进行 NotebookLM 设置、上传源文档、进行文献合成，并直接根据源文本创建互动测验。",
@@ -58,18 +61,12 @@ const courseData = {
         { name: "Audio Overview (Podcast) Guide", url: "#", type: "pdf" }
       ],
       transcript: [
-        { time: 0, textEn: "Welcome back. In Session 2, we dive into Gemini Notebook and NotebookLM.", textZh: "欢迎回来。在第二场中，我们将深入研究 Gemini 笔记与 NotebookLM。" },
-        { time: 6, textEn: "NotebookLM is a source-grounded AI assistant. It reads your uploaded PDFs, docs, and links.", textZh: "NotebookLM 是一款基于信源的 AI 助手。它可以读取您上传的 PDF、文档和链接。" },
-        { time: 13, textEn: "This prevents AI hallucinations, because the system is strictly limited to your sources.", textZh: "这可以防止 AI 产生幻觉，因为该系统被严格限制在您提供的信源范围内。" },
-        { time: 20, textEn: "Let's perform a live demo by uploading a postgraduate pedagogy paper.", textZh: "让我们通过上传一篇关于研究生教学法的论文来进行现场演示。" },
-        { time: 27, textEn: "You can ask NotebookLM to draft a research brief or highlight structural themes.", textZh: "您可以要求 NotebookLM 起草一份研究简报，或者突出结构性主题。" },
-        { time: 35, textEn: "A very popular feature is the Audio Overview, which creates a deep-dive podcast discussion.", textZh: "一个非常受欢迎的功能是“音频概览”（Audio Overview），它可以生成深入的播客讨论。" },
-        { time: 43, textEn: "Now, let's look at how we can generate a 10-question Socratic quiz based on this syllabus.", textZh: "现在，让我们来看看如何根据这个大纲生成一个包含 10 个问题的苏格拉底式测验。" },
-        { time: 51, textEn: "Notice how it cites the specific page number and paragraph for every generated answer.", textZh: "注意它是如何为每个生成的答案引用特定的页码和段落的。" },
-        { time: 59, textEn: "This makes grading and review extremely transparent and reliable for students.", textZh: "这使得学生的评估和复习变得极其透明和可靠。" },
-        { time: 66, textEn: "For your practice exercise, I want each of you to upload your own syllabus and generate a study guide.", textZh: "在接下来的实践练习中，我希望大家上传自己的教学大纲并生成一份学习指南。" },
-        { time: 74, textEn: "This active task will take about 10 minutes. Follow along with the step-by-step documentation.", textZh: "这个主动任务大约需要 10 分钟。请遵循分步文档指南。" },
-        { time: 80, textEn: "Great. Let's start the timer and I'll walk around to assist.", textZh: "好的。让我们开始计时，我会巡视以提供协助。" }
+        { time: 0, textEn: "Welcome to this video on implementing source-grounded pedagogy using NotebookLM. We will guide you through a structured, hands-on workflow for your practice exercise.", textZh: "欢迎收看这期关于使用 NotebookLM 实施基于信源教学法的视频。我们将引导您完成一个结构化的、亲自动手的实践练习工作流。" },
+        { time: 8, textEn: "This session focuses on mastering an end-to-end studio workflow. You will gain experience in active document ingestion and generating reviews, moving from initial setup to verifying inline citations for reliable output.", textZh: "本节的重点是掌握端到端的工坊工作流。您将获得主动文档导入和生成评审的经验，从初始设置一直到验证行内引用以确保输出的可靠性。" },
+        { time: 23, textEn: "Step 1 is to prepare your workspace. Begin by opening NotebookLM, creating a new dedicated notebook for your module, and uploading your syllabus and core reference PDFs.", textZh: "第一步是准备您的工作区。首先打开 NotebookLM，为您的模块创建一个新的专用笔记本，并上传您的教学大纲和核心参考 PDF。" },
+        { time: 33, textEn: "In step 2, you will generate your study materials. Start by formulating prompts for specific learning outcomes, request a structural summary based on your sources, and finally, verify all citations to ensure accuracy.", textZh: "第二步，您将生成学习材料。首先针对特定的学习成果设计提示词，要求系统根据您的源材料生成结构化摘要，最后验证所有引用以确保准确性。" },
+        { time: 47, textEn: "For step 3, we will engage in active practice. You will have a 10-minute timer for your tasks. Please follow the provided lab documentation closely, and feel free to ask for assistance.", textZh: "第三步，我们将进行主动实践。您将有 10 分钟的时间来完成任务。请密切遵循提供的实验文档指南，如有疑问，请随时寻求协助。" },
+        { time: 58, textEn: "To wrap up, here are some final recommendations: ensure your files are in a compatible format, and remember that clear document structuring with headings will significantly improve the precision of your results.", textZh: "最后，这里有一些最终建议：确保您的文件格式兼容，并记住，带有清晰标题的文档结构将显著提高摘要结果的准确性。" }
       ]
     },
     {
