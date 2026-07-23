@@ -53,11 +53,12 @@ const courseData = {
       titleZh: "Gemini 笔记 (NotebookLM) 与信源扎实型 AI",
       duration: 71, // seconds matching the actual video length
       videoUrl: "https://drive.google.com/file/d/198FI9VuESg3u9muvx-ZZa5NkuvOY3zIh/view?usp=sharing",
+      transcriptFileUrl: "https://drive.google.com/file/d/1b7TrBljQgGngPa2W5JEz7UWA1VNgAMFA/view?usp=sharing",
       overviewEn: "Turn your graduate research papers and curriculum guidelines into an active co-teacher. This session guides participants through NotebookLM setup, source document uploading, literature synthesis, and creating interactive quizzes directly from source texts.",
       overviewZh: "将您的研究生研究论文和课程大纲转化为活跃的“合作教师”。本节将指导参与者进行 NotebookLM 设置、上传源文档、进行文献合成，并直接根据源文本创建互动测验。",
       resources: [
         { name: "NotebookLM Platform", url: "https://notebooklm.google.com/", type: "link" },
-        { name: "Sample Syllabus PDF for Upload", url: "#", type: "file" },
+        { name: "Session 2 Transcript (Markdown)", url: "https://drive.google.com/file/d/1b7TrBljQgGngPa2W5JEz7UWA1VNgAMFA/view?usp=sharing", type: "file" },
         { name: "Audio Overview (Podcast) Guide", url: "#", type: "pdf" }
       ],
       transcript: [
@@ -180,7 +181,8 @@ const courseData = {
       seconds: "seconds",
       unlocked: "Unlocked",
       status_active: "Active",
-      status_completed: "Completed"
+      status_completed: "Completed",
+      view_transcript_file: "View Original Transcript File"
     },
     zh: {
       nav_title: "KLUST-Tongji ECT",
@@ -220,7 +222,8 @@ const courseData = {
       seconds: "秒",
       unlocked: "已解锁",
       status_active: "进行中",
-      status_completed: "已完成"
+      status_completed: "已完成",
+      view_transcript_file: "查看原始字幕文件"
     }
   }
 };

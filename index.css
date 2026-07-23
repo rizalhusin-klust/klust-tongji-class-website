@@ -1059,6 +1059,30 @@ footer {
   color: var(--text-bright);
 }
 
+.transcript-download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-light);
+  border-radius: 0.5rem;
+  color: var(--accent-brand);
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  transition: all 0.2s ease;
+  width: fit-content;
+}
+
+.transcript-download-link:hover {
+  background-color: rgba(99, 102, 241, 0.08);
+  border-color: var(--accent-brand);
+  color: var(--text-bright);
+  transform: translateY(-1px);
+}
+
 /* =============================================================
    MOBILE RESPONSIVENESS & TOUCH OPTIMIZATIONS
    ============================================================= */

@@ -392,8 +392,21 @@ function renderTranscript(session) {
   const container = document.getElementById('transcriptContainer');
   container.innerHTML = '';
 
+  if (session.transcriptFileUrl) {
+    const fileLink = document.createElement('a');
+    fileLink.href = session.transcriptFileUrl;
+    fileLink.target = '_blank';
+    fileLink.className = 'transcript-download-link';
+    fileLink.innerHTML = `<i class="fa-solid fa-file-arrow-down"></i> <span data-i18n="view_transcript_file">View Original Transcript File</span>`;
+    container.appendChild(fileLink);
+  }
+
   if (!session.transcript || session.transcript.length === 0) {
-    container.innerHTML = `<div style="text-align: center; color: var(--text-dim); padding: 2rem;" data-i18n="no_transcript">No transcript available for this segment.</div>`;
+    const noTranscriptDiv = document.createElement('div');
+    noTranscriptDiv.style = "text-align: center; color: var(--text-dim); padding: 2rem;";
+    noTranscriptDiv.setAttribute('data-i18n', 'no_transcript');
+    noTranscriptDiv.textContent = "No transcript available for this segment.";
+    container.appendChild(noTranscriptDiv);
     updateLanguageUI();
     return;
   }
