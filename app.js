@@ -153,7 +153,7 @@ function initCourseOutline() {
     }
 
     item.innerHTML = `
-      <div class="agenda-status-icon">${statusIcon}</div>
+      <button class="agenda-status-icon" title="${isCompleted ? 'Mark as incomplete' : 'Mark as completed'}">${statusIcon}</button>
       <div class="agenda-details">
         <span class="agenda-tag">${session.tag}</span>
         <span class="agenda-title">${title}</span>
@@ -163,6 +163,13 @@ function initCourseOutline() {
       </div>
     `;
 
+    // Attach click listener to status button
+    const btn = item.querySelector('.agenda-status-icon');
+    btn.onclick = (e) => {
+      e.stopPropagation(); // Avoid triggering session switch
+      toggleSessionComplete(session.id);
+    };
+
     container.appendChild(item);
   });
 
@@ -171,6 +178,17 @@ function initCourseOutline() {
   const percent = Math.round((completedCount / total) * 100);
   document.getElementById('courseProgressBar').style.width = `${percent}%`;
   document.getElementById('courseProgressText').textContent = `${percent}%`;
+}
+
+function toggleSessionComplete(id) {
+  const index = completedSessions.indexOf(id);
+  if (index > -1) {
+    completedSessions.splice(index, 1);
+  } else {
+    completedSessions.push(id);
+  }
+  localStorage.setItem('klust_completed', JSON.stringify(completedSessions));
+  initCourseOutline();
 }
 
 function selectSession(id) {
