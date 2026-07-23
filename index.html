@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Pedagogy Masterclass | KLUST-Tongji Interactive Class Portal</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header / Sticky Navigation Bar -->
+        <header>
+            <div class="max-width-wrapper">
+                <nav class="nav-wrapper">
+                    <!-- Brand Section -->
+                    <div class="brand-section">
+                        <div class="brand-logo-container">
+                            <img src="https://raw.githubusercontent.com/rizalhusin-klust/klust-images/main/KLUST%20%20logo%20only.png" alt="KLUST Logo" onerror="this.onerror=null; this.parentNode.innerHTML='<i class=\'fa-solid fa-graduation-cap text-lg text-white\'></i>';">
+                        </div>
+                        <div class="brand-titles">
+                            <span class="brand-title" data-i18n="nav_title">KLUST-Tongji ECT</span>
+                            <span class="brand-subtitle" data-i18n="nav_subtitle">Postgrad Teaching Masterclass</span>
+                        </div>
+                    </div>
+                    <!-- Controls -->
+                    <div class="nav-controls">
+
+                        <!-- Bilingual Language Toggle -->
+                        <button class="btn btn-secondary" onclick="toggleLanguage()">
+                            <i class="fa-solid fa-globe text-indigo-400"></i>
+                            <span data-i18n="lang_btn">中文 / English</span>
+                        </button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Workspace Section -->
+        <main class="max-width-wrapper">
+            <div class="dashboard-grid">
+                
+                <!-- Left Panel: Video & Tabs (Main Area) -->
+                <section class="main-player-area">
+                    <!-- Video Player Container -->
+                    <div class="video-section-wrapper">
+                        <div class="video-container">
+                            <video id="classVideoPlayer" controls playsinline>
+                                <source src="" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            
+                            <!-- Custom Coffee Break Screen Overlay -->
+                            <div id="coffeeBreakOverlay" class="video-overlay-screen hidden">
+                                <i class="fa-solid fa-mug-hot overlay-icon"></i>
+                                <h2 class="brand-title" data-i18n="break_title">Coffee & Networking Break</h2>
+                                <p style="color: var(--text-muted); margin-bottom: 1.5rem;" data-i18n="break_desc">Break time! Grab a drink and network.</p>
+                                <div style="font-family: 'Fira Code', monospace; font-size: 2.25rem; font-weight: 700; color: var(--accent-brand); margin-bottom: 0.5rem;" id="breakCountdown">00:30</div>
+                                <div style="font-size: 0.8rem; color: var(--text-dim);" data-i18n="break_timer">Time Remaining</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Custom Tab Bar Navigation -->
+                    <div class="tabs-navigation-container">
+                        <div class="tabs-bar" role="tablist">
+                            <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-overview" onclick="switchTab(event, 'panel-overview')">
+                                <i class="fa-solid fa-circle-info mr-1"></i> <span data-i18n="overview">Overview</span>
+                            </button>
+                            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-transcript" onclick="switchTab(event, 'panel-transcript')">
+                                <i class="fa-solid fa-file-waveform mr-1"></i> <span data-i18n="transcript">Transcript</span>
+                            </button>
+                            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-notebook" onclick="switchTab(event, 'panel-notebook')">
+                                <i class="fa-solid fa-book mr-1"></i> <span data-i18n="notebook">Notebook</span>
+                            </button>
+                            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-qa" onclick="switchTab(event, 'panel-qa')">
+                                <i class="fa-solid fa-comments mr-1"></i> <span data-i18n="qa">Q&A</span>
+                            </button>
+
+                            <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-resources" onclick="switchTab(event, 'panel-resources')">
+                                <i class="fa-solid fa-download mr-1"></i> <span data-i18n="resources">Resources</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Tab Panels Container -->
+                    <div class="tabs-panels-container">
+                        <!-- Overview Tab -->
+                        <div id="panel-overview" class="tab-panel active" role="tabpanel">
+                            <div class="overview-tab-content">
+                                <div class="overview-header">
+                                    <h2 id="sessionDetailTitle">Session Title</h2>
+                                    <div class="overview-meta">
+                                        <div class="meta-item">
+                                            <i class="fa-regular fa-clock"></i>
+                                            <span id="sessionDetailDuration">00:00</span>
+                                        </div>
+                                        <div class="meta-item">
+                                            <i class="fa-solid fa-tag"></i>
+                                            <span id="sessionDetailTag">Session</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="overview-desc" id="sessionDetailOverview">
+                                    Session description goes here.
+                                </div>
+                                <hr style="border: 0; border-top: 1px solid var(--border-light);">
+                                <div class="overview-instructors">
+                                    <h3 style="font-size: 1rem; font-weight: 700; color: var(--text-bright); margin-bottom: 1rem;" data-i18n="about_instructors">About the Facilitators</h3>
+                                    <div class="instructors-section" id="facilitatorsList">
+                                        <!-- Instructors lists rendered dynamically -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Transcript Tab -->
+                        <div id="panel-transcript" class="tab-panel" role="tabpanel">
+                            <div class="transcript-tab-content" id="transcriptContainer">
+                                <!-- Transcript items populated dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Notebook Tab -->
+                        <div id="panel-notebook" class="tab-panel" role="tabpanel">
+                            <div class="notebook-tab-content">
+                                <!-- Notes Input Area -->
+                                <div class="notes-input-box">
+                                    <textarea id="noteInputField" placeholder="Type a note at the current video timestamp... Press Enter to save." data-i18n="note_placeholder" onkeydown="handleNoteInputKeydown(event)"></textarea>
+                                    <div class="notes-input-actions">
+                                        <div class="note-timestamp-badge">
+                                            <i class="fa-solid fa-stopwatch"></i> <span id="currentVideoTimestamp">00:00</span>
+                                        </div>
+                                        <button class="btn btn-primary btn-sm" onclick="saveNote()" data-i18n="btn_save_note">Save Note</button>
+                                    </div>
+                                </div>
+                                <!-- Notes Actions (Export) -->
+                                <div style="display: flex; justify-content: flex-end;">
+                                    <button class="btn btn-secondary btn-sm" onclick="exportNotes()" data-i18n="btn_export_notes">
+                                        <i class="fa-solid fa-file-export"></i> Export Notes (.md)
+                                    </button>
+                                </div>
+                                <!-- Notes List -->
+                                <div class="notes-list" id="notesListContainer">
+                                    <!-- Saved notes items rendered dynamically -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Q&A Tab -->
+                        <div id="panel-qa" class="tab-panel" role="tabpanel">
+                            <div class="qa-tab-content">
+                                <!-- Post Question Box -->
+                                <div class="qa-post-box">
+                                    <input type="text" id="qaTitleInput" placeholder="Question Title (e.g. NotebookLM PDF Limits)" data-i18n="qa_title_placeholder">
+                                    <textarea id="qaBodyInput" placeholder="Write details of your question here..." data-i18n="qa_body_placeholder"></textarea>
+                                    <div style="display: flex; justify-content: flex-end;">
+                                        <button class="btn btn-primary" onclick="postQuestion()" data-i18n="btn_post_question">Post Question</button>
+                                    </div>
+                                </div>
+                                <!-- Questions List -->
+                                <div class="qa-list" id="qaListContainer">
+                                    <!-- Questions and replies populated dynamically -->
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Resources Tab -->
+                        <div id="panel-resources" class="tab-panel" role="tabpanel">
+                            <div class="resources-tab-content" id="resourcesContainer">
+                                <!-- Resources items rendered dynamically -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Right Panel: Sidebar Course Agenda Outline -->
+                <aside class="agenda-sidebar">
+                    <div class="sidebar-header">
+                        <h2 data-i18n="outline_title">Course Agenda</h2>
+                    </div>
+                    <!-- Course Completion Progress Bar -->
+                    <div class="course-progress-container">
+                        <div class="progress-info">
+                            <span data-i18n="progress_label">Course Progress</span>
+                            <span id="courseProgressText">0%</span>
+                        </div>
+                        <div class="progress-bar-bg">
+                            <div id="courseProgressBar" class="progress-bar-fill"></div>
+                        </div>
+                    </div>
+                    <!-- Agenda Playlist -->
+                    <div class="agenda-items-list" id="agendaItemsContainer">
+                        <!-- Agenda sessions rendered dynamically -->
+                    </div>
+                </aside>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div class="max-width-wrapper">
+                <div class="footer-content">
+                    <span class="footer-text" data-i18n="footer_copy">&copy; 2026 Rizal Husin, FABE KLUST</span>
+                    <div class="footer-links">
+                        <a href="#" data-i18n="footer_top">Back to Top</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Load data.js first, then app.js -->
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

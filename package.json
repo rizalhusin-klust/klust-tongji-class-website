@@ -1,0 +1,19 @@
+{
+  "name": "klust-tongji-interactive-class-website",
+  "version": "1.0.0",
+  "description": "Interactive class website for KLUST-Tongji Masterclass, featuring LinkedIn Learning player features and live Gemini API Co-Teacher.",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx http-server -p 3000",
+    "start": "npx http-server -p 3000"
+  },
+  "keywords": [
+    "education",
+    "interactive",
+    "pedagogy",
+    "gemini",
+    "notebooklm"
+  ],
+  "author": "Rizal Husin",
+  "license": "MIT"
+}
