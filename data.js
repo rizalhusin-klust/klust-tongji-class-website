@@ -52,7 +52,7 @@ const courseData = {
       titleEn: "Gemini Notebook (NotebookLM) & Source-Grounded AI",
       titleZh: "Gemini 笔记 (NotebookLM) 与信源扎实型 AI",
       duration: 85, // seconds for testing
-      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+      videoUrl: "https://drive.google.com/file/d/198FI9VuESg3u9muvx-ZZa5NkuvOY3zIh/view?usp=sharing",
       overviewEn: "Turn your graduate research papers and curriculum guidelines into an active co-teacher. This session guides participants through NotebookLM setup, source document uploading, literature synthesis, and creating interactive quizzes directly from source texts.",
       overviewZh: "将您的研究生研究论文和课程大纲转化为活跃的“合作教师”。本节将指导参与者进行 NotebookLM 设置、上传源文档、进行文献合成，并直接根据源文本创建互动测验。",
       resources: [
