@@ -95,7 +95,7 @@ const courseData = {
       titleEn: "Interactive Lesson AI: Gemini Gems & Canvas Co-Writing",
       titleZh: "互动课程 AI：Gemini Gems 与 Canvas 协同写作",
       duration: 90, // seconds
-      videoUrl: "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      videoUrl: "https://drive.google.com/file/d/1Xn8ov2RrpFmRE3_PCB0NpoC_HWOSo5um/view?usp=sharing",
       overviewEn: "Dive into custom instruction engineering. Part A covers configuring custom Gemini Gems (such as Socratic Tutors and Lesson Hook builders). Part B demonstrates using Google Workspace Canvas alongside Gemini to co-write, expand, and localize 45-minute active lesson plans.",
       overviewZh: "深入研究自定义指令工程。A 部分介绍配置自定义 Gemini Gems（例如苏格拉底式导师和课程切入点构建器）。B 部分展示了如何并肩使用 Google Workspace Canvas 和 Gemini 来协同编写、扩写以及本地化 45 分钟的主动式教案。",
       resources: [
