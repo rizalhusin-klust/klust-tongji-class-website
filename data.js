@@ -27,7 +27,7 @@ const courseData = {
       titleEn: "Introduction & Housekeeping: The AI Teaching Assistant Revolution",
       titleZh: "导言与会务说明：AI 助教革命",
       duration: 76, // seconds for testing convenience (normally 1200 / 20 mins)
-      videoUrl: "https://docs.google.com/videos/d/1Eb_yCegKRHGDyr3xq276nU5DnWWUuS4rpGV3HIBp8JQ/play?usp=sharing",
+      videoUrl: "videos/session-1.mp4",
       transcriptFileUrl: "https://drive.google.com/file/d/1NeVwAX6GyJx8BiKqZIPku6bNgPx0Ua2z/view?usp=sharing",
       overviewEn: "Setting the stage for postgraduate students and future educators. This session covers a quick interactive poll on AI usage in lesson planning, followed by an overview of shifting from general chatbots to source-grounded and persona-based educational agents.",
       overviewZh: "为研究生及未来的教师奠定基础。本节内容包括关于教案设计中 AI 使用情况的快速互动投票，随后概述如何从通用聊天机器人转向来源扎实且基于特定角色的教育智能体。",
@@ -63,7 +63,7 @@ const courseData = {
       titleEn: "Gemini Notebook (NotebookLM) & Source-Grounded AI",
       titleZh: "Gemini 笔记 (NotebookLM) 与信源扎实型 AI",
       duration: 71, // seconds matching the actual video length
-      videoUrl: "https://drive.google.com/file/d/198FI9VuESg3u9muvx-ZZa5NkuvOY3zIh/view?usp=sharing",
+      videoUrl: "videos/session-2.mp4",
       transcriptFileUrl: "https://drive.google.com/file/d/1b7TrBljQgGngPa2W5JEz7UWA1VNgAMFA/view?usp=sharing",
       overviewEn: "Turn your graduate research papers and curriculum guidelines into an active co-teacher. This session guides participants through NotebookLM setup, source document uploading, literature synthesis, and creating interactive quizzes directly from source texts.",
       overviewZh: "将您的研究生研究论文和课程大纲转化为活跃的“合作教师”。本节将指导参与者进行 NotebookLM 设置、上传源文档、进行文献合成，并直接根据源文本创建互动测验。",
@@ -101,7 +101,7 @@ const courseData = {
       titleEn: "Interactive Lesson AI: Gemini Gems & Canvas Co-Writing",
       titleZh: "互动课程 AI：Gemini Gems 与 Canvas 协同写作",
       duration: 90, // seconds
-      videoUrl: "https://drive.google.com/file/d/1Xn8ov2RrpFmRE3_PCB0NpoC_HWOSo5um/view?usp=sharing",
+      videoUrl: "videos/session-3.mp4",
       overviewEn: "Dive into custom instruction engineering. Part A covers configuring custom Gemini Gems (such as Socratic Tutors and Lesson Hook builders). Part B demonstrates using Google Workspace Canvas alongside Gemini to co-write, expand, and localize 45-minute active lesson plans.",
       overviewZh: "深入研究自定义指令工程。A 部分介绍配置自定义 Gemini Gems（例如苏格拉底式导师和课程切入点构建器）。B 部分展示了如何并肩使用 Google Workspace Canvas 和 Gemini 来协同编写、扩写以及本地化 45 分钟的主动式教案。",
       resources: [
@@ -131,7 +131,7 @@ const courseData = {
       titleEn: "Concluding & Discussion: Ethics, Guardrails & Future Classrooms",
       titleZh: "总结与讨论：伦理、安全网与未来课堂",
       duration: 55, // seconds
-      videoUrl: "https://drive.google.com/file/d/1TjTQGC3nmO1lqFO-HcTrw_x4tpJEqfYd/view?usp=sharing",
+      videoUrl: "videos/session-4.mp4",
       overviewEn: "Rapid-fire showcase of student-designed Gems and syllabus guidelines. The session concludes with a panel discussion on pedagogical ethics, AI-driven assessment integrity, establishing classroom guardrails, and an open Q&A forum.",
       overviewZh: "学生设计的 Gems 和教学大纲指南的快速展示。本节最后将举行关于教学伦理、AI 驱动评估的诚信度、建立课堂防线以及开放式问答论坛的小组讨论。",
       resources: [
