@@ -62,13 +62,41 @@ const courseData = {
       tag: "Session 2",
       titleEn: "Gemini Notebook (NotebookLM) & Source-Grounded AI",
       titleZh: "Gemini 笔记 (NotebookLM) 与信源扎实型 AI",
-      duration: 71, // seconds matching the actual video length
+      duration: 85, // seconds
       videoUrl: "videos/session-2.mp4",
-      transcriptFileUrl: "https://drive.google.com/file/d/1b7TrBljQgGngPa2W5JEz7UWA1VNgAMFA/view?usp=sharing",
       overviewEn: "Turn your graduate research papers and curriculum guidelines into an active co-teacher. This session guides participants through NotebookLM setup, source document uploading, literature synthesis, and creating interactive quizzes directly from source texts.",
       overviewZh: "将您的研究生研究论文和课程大纲转化为活跃的“合作教师”。本节将指导参与者进行 NotebookLM 设置、上传源文档、进行文献合成，并直接根据源文本创建互动测验。",
       resources: [
         { name: "NotebookLM Platform", url: "https://notebooklm.google.com/", type: "link" },
+        { name: "Sample Syllabus PDF for Upload", url: "#", type: "file" },
+        { name: "Audio Overview (Podcast) Guide", url: "#", type: "pdf" }
+      ],
+      transcript: [
+        { time: 0, textEn: "Welcome back. In Session 2, we dive into Gemini Notebook and NotebookLM.", textZh: "欢迎回来。在第二场中，我们将深入研究 Gemini 笔记与 NotebookLM。" },
+        { time: 6, textEn: "NotebookLM is a source-grounded AI assistant. It reads your uploaded PDFs, docs, and links.", textZh: "NotebookLM 是一款基于信源的 AI 助手。它可以读取您上传的 PDF、文档和链接。" },
+        { time: 13, textEn: "This prevents AI hallucinations, because the system is strictly limited to your sources.", textZh: "这可以防止 AI 产生幻觉，因为该系统被严格限制在您提供的信源范围内。" },
+        { time: 20, textEn: "Let's perform a live demo by uploading a postgraduate pedagogy paper.", textZh: "让我们通过上传一篇关于研究生教学法的论文来进行现场演示。" },
+        { time: 27, textEn: "You can ask NotebookLM to draft a research brief or highlight structural themes.", textZh: "您可以要求 NotebookLM 起草一份 research brief 或者突出结构性主题。" },
+        { time: 35, textEn: "A very popular feature is the Audio Overview, which creates a deep-dive podcast discussion.", textZh: "一个非常受欢迎的功能是“音频概览”（Audio Overview），它可以生成深入的播客讨论。" },
+        { time: 43, textEn: "Now, let's look at how we can generate a 10-question Socratic quiz based on this syllabus.", textZh: "现在，让我们来看看如何根据这个大纲生成一个包含 10 个问题的苏格拉底式测验。" },
+        { time: 51, textEn: "Notice how it cites the specific page number and paragraph for every generated answer.", textZh: "注意它是如何为每个生成的答案引用特定的页码 and 段落的。" },
+        { time: 59, textEn: "This makes grading and review extremely transparent and reliable for students.", textZh: "这使得学生的评估和复习变得极其透明和可靠。" },
+        { time: 66, textEn: "For your practice exercise, I want each of you to upload your own syllabus and generate a study guide.", textZh: "在接下来的实践练习中，我希望大家上传自己的教学大纲并生成一份学习指南。" },
+        { time: 74, textEn: "This active task will take about 10 minutes. Follow along with the step-by-step documentation.", textZh: "这个主动任务大约需要 10 分钟。请遵循分步文档指南。" },
+        { time: 80, textEn: "Great. Let's start the timer and I'll walk around to assist.", textZh: "好的。让我们开始计时，我会巡视以提供协助。" }
+      ]
+    },
+    {
+      id: "session-2-brief",
+      tag: "Lab Brief",
+      titleEn: "Session 2: Hands-On Exercise Brief",
+      titleZh: "Session 2: 动手实践简报",
+      duration: 71, // seconds
+      videoUrl: "videos/session-2-brief.mp4",
+      transcriptFileUrl: "https://drive.google.com/file/d/1b7TrBljQgGngPa2W5JEz7UWA1VNgAMFA/view?usp=sharing",
+      overviewEn: "This session provides a structured, hands-on walkthrough for your practice exercise. Follow step-by-step instructions to upload your syllabus, formulate prompts, and generate educational study guides using NotebookLM.",
+      overviewZh: "本节提供动手实践练习的结构化分步说明。遵循指导以上传您的教学大纲、设计提示词，并使用 NotebookLM 生成教育学习指南。",
+      resources: [
         { name: "Session 2 Transcript (Markdown)", url: "https://drive.google.com/file/d/1b7TrBljQgGngPa2W5JEz7UWA1VNgAMFA/view?usp=sharing", type: "file" },
         { name: "Audio Overview (Podcast) Guide", url: "#", type: "pdf" }
       ],
