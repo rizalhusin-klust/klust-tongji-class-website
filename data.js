@@ -95,9 +95,7 @@ const courseData = {
       overviewEn: "This session provides a structured, hands-on walkthrough for your practice exercise. Follow step-by-step instructions to upload your syllabus, formulate prompts, and generate educational study guides using NotebookLM.",
       overviewZh: "本节提供动手实践练习的结构化分步说明。遵循指导以上传您的教学大纲、设计提示词，并使用 NotebookLM 生成教育学习指南。",
       resources: [
-        { name: "Project Brief NotebookLM (Bilingual PDF)", url: "resources/Project%20Brief%20NotebookLM(Bilingual).pdf", type: "pdf" },
-        { name: "Session 2 Transcript (Markdown)", url: "https://drive.google.com/file/d/1b7TrBljQgGngPa2W5JEz7UWA1VNgAMFA/view?usp=sharing", type: "file" },
-        { name: "Audio Overview (Podcast) Guide", url: "#", type: "pdf" }
+        { name: "Project Brief NotebookLM (Bilingual PDF)", url: "resources/Project%20Brief%20NotebookLM(Bilingual).pdf", type: "pdf" }
       ],
       transcript: [
         { time: 0, textEn: "Welcome to this video on implementing source-grounded pedagogy using NotebookLM. We will guide you through a structured, hands-on workflow for your practice exercise.", textZh: "欢迎收看这期关于使用 NotebookLM 实施基于信源教学法的视频。我们将引导您完成一个结构化的、亲自动手的实践练习工作流。" },
