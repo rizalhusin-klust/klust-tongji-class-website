@@ -89,8 +89,8 @@ const courseData = {
       tag: "Lab Brief",
       titleEn: "Exercise 1: Hands-on Exercise Brief",
       titleZh: "Exercise 1: 动手实践简报",
-      duration: 71, // seconds
-      videoUrl: "videos/Step-by-Step Instructions_ Hands-On Practice Exercise.mp4",
+      duration: 122, // seconds
+      videoUrl: "videos/Malaysian Historical Cities Field Study - Briefing (1).mp4",
       transcriptFileUrl: "https://drive.google.com/file/d/1b7TrBljQgGngPa2W5JEz7UWA1VNgAMFA/view?usp=sharing",
       overviewEn: "This session provides a structured, hands-on walkthrough for your practice exercise. Follow step-by-step instructions to upload your syllabus, formulate prompts, and generate educational study guides using NotebookLM.",
       overviewZh: "本节提供动手实践练习的结构化分步说明。遵循指导以上传您的教学大纲、设计提示词，并使用 NotebookLM 生成教育学习指南。",
