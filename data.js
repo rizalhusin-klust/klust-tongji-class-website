@@ -66,8 +66,7 @@ const courseData = {
       overviewZh: "将您的研究生研究论文和课程大纲转化为活跃的“合作教师”。本节将指导参与者进行 NotebookLM 设置、上传源文档、进行文献合成，并直接根据源文本创建互动测验。",
       resources: [
         { name: "NotebookLM Platform", url: "https://notebooklm.google.com/", type: "link" },
-        { name: "Sample Syllabus PDF for Upload", url: "#", type: "file" },
-        { name: "Audio Overview (Podcast) Guide", url: "#", type: "pdf" }
+        { name: "Sample Syllabus PDF for Upload", url: "#", type: "file" }
       ],
       transcript: [
         { time: 0, textEn: "Welcome back. In Session 2, we dive into Gemini Notebook and NotebookLM.", textZh: "欢迎回来。在第二场中，我们将深入研究 Gemini 笔记与 NotebookLM。" },
