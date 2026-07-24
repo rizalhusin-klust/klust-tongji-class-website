@@ -28,22 +28,33 @@ const courseData = {
       titleZh: "导言与会务说明：AI 助教革命",
       duration: 76, // seconds for testing convenience (normally 1200 / 20 mins)
       videoUrl: "https://docs.google.com/videos/d/1Eb_yCegKRHGDyr3xq276nU5DnWWUuS4rpGV3HIBp8JQ/play?usp=sharing",
+      transcriptFileUrl: "https://drive.google.com/file/d/1NeVwAX6GyJx8BiKqZIPku6bNgPx0Ua2z/view?usp=sharing",
       overviewEn: "Setting the stage for postgraduate students and future educators. This session covers a quick interactive poll on AI usage in lesson planning, followed by an overview of shifting from general chatbots to source-grounded and persona-based educational agents.",
       overviewZh: "为研究生及未来的教师奠定基础。本节内容包括关于教案设计中 AI 使用情况的快速互动投票，随后概述如何从通用聊天机器人转向来源扎实且基于特定角色的教育智能体。",
       resources: [
         { name: "Masterclass Slides (PDF)", url: "#", type: "pdf" },
-        { name: "KLUST AI Education Guidelines", url: "https://klust.edu.my/", type: "link" }
+        { name: "KLUST AI Education Guidelines", url: "https://klust.edu.my/", type: "link" },
+        { name: "Session 1 Transcript (Markdown)", url: "https://drive.google.com/file/d/1NeVwAX6GyJx8BiKqZIPku6bNgPx0Ua2z/view?usp=sharing", type: "file" }
       ],
       transcript: [
-        { time: 0, textEn: "Hello everyone, and welcome to the KLUST-Tongji Masterclass on AI-Powered Pedagogy.", textZh: "大家好，欢迎来到 KLUST-同济 AI 智能教学大师课。" },
-        { time: 5, textEn: "In this workshop, we will explore three key tools: NotebookLM, Gemini Gems, and Workspace Canvas.", textZh: "在本次工作坊中，我们将探索三个核心工具：NotebookLM、Gemini Gems 和 Workspace Canvas。" },
-        { time: 11, textEn: "Our focus today is shifting from generic search engines to source-grounded learning aids.", textZh: "我们今天的重点是从通用的搜索引擎转向基于信源的辅助学习工具。" },
-        { time: 17, textEn: "We want to build systems that act as co-teachers, helping us prepare courses and support students.", textZh: "我们希望构建能够充当“助教”的系统，帮助我们准备课程并支持学生。" },
-        { time: 24, textEn: "Let us start by looking at how AI is transforming classrooms and reducing lesson planning workloads.", textZh: "让我们首先来看看 AI 如何变革课堂并减轻教案设计的负担。" },
-        { time: 31, textEn: "Remember, the goal is not to replace human instruction, but to amplify its effectiveness.", textZh: "请记住，我们的目标不是取代人类教学，而是放大其效果。" },
-        { time: 38, textEn: "We will check how personalized education can become scalable and highly interactive.", textZh: "我们将看看个性化教育如何实现规模化和高度互动。" },
-        { time: 45, textEn: "Let's review the session roadmap and get ready for our hands-on labs.", textZh: "让我们一起来看一下课程路线图，为我们的动手实验做好准备。" },
-        { time: 52, textEn: "I encourage you to participate in our live polls throughout this session. Let's begin!", textZh: "我鼓励大家在整个课程中积极参与我们的实时投票。让我们开始吧！" }
+        { time: 0, textEn: "Welcome to the KLUST-Tongji Masterclass on AI-powered pedagogy.", textZh: "欢迎来到 KLUST-同济 AI 智能教学大师课。" },
+        { time: 6, textEn: "In this video, we will explore how to transform education through modern digital tools,", textZh: "在这期视频中，我们将探索如何通过现代数字化工具来变革教育，" },
+        { time: 12, textEn: "source-grounded learning aids, and intelligent co-teacher workflows.", textZh: "基于信源的学习辅助工具以及智能助教工作流。" },
+        { time: 16, textEn: "Our focus is shifting from generic web searches to building trustworthy educational ecosystems.", textZh: "我们的重点正在从通用的网络搜索转向构建值得信赖的教育生态系统。" },
+        { time: 21, textEn: "We aim to establish reliable AI partners that assist educators with lesson structuring,", textZh: "我们旨在建立可靠的 AI 合作伙伴，协助教育者进行课程结构设计，" },
+        { time: 26, textEn: "material verification, and individualized student engagement.", textZh: "材料验证以及个性化学生互动。" },
+        { time: 30, textEn: "To achieve this, we will explore three essential tools,", textZh: "为了实现这一目标，我们将探索三个核心工具：" },
+        { time: 33, textEn: "notebook LM for source-grounded curriculum,", textZh: "用于基于信源课程的 NotebookLM，" },
+        { time: 36, textEn: "Gemini Gems for creating expert pedagogical assistance,", textZh: "用于创建专家教学助手的 Gemini Gems，" },
+        { time: 40, textEn: "and workspace canvas for collaborative brainstorming and assignment workflows.", textZh: "以及用于协作脑力激荡和作业工作流的 Workspace Canvas。" },
+        { time: 45, textEn: "These tools help transform classrooms by drastically reducing administrative workloads,", textZh: "这些工具有助于通过大幅减轻行政工作负担来变革课堂，" },
+        { time: 50, textEn: "amplifying human instruction through focus mentorship,", textZh: "通过专注的导师辅导来放大人类教学的效果，" },
+        { time: 52, textEn: "and providing scalable adaptive guidance for students at every level.", textZh: "并为各个层级的学生提供可扩展的自适应指导。" },
+        { time: 56, textEn: "This Masterclass is structured into three parts,", textZh: "本次大师课结构分为三个部分：" },
+        { time: 59, textEn: "roadmap review, hands-on labs for testing and building your own assistance,", textZh: "路线图审查、用于测试 and 构建您自己的助手的动手实验，" },
+        { time: 64, textEn: "and live engagement sessions for peer feedback and interaction.", textZh: "以及用于同行反馈和互动的现场交流环节。" },
+        { time: 68, textEn: "Are you ready to begin?", textZh: "您准备好开始了吗？" },
+        { time: 70, textEn: "Let's dive into the hands-on labs and start building your AI co-teacher toolkit.", textZh: "让我们深入动手实验，开始构建您的 AI 助教工具箱吧。" }
       ]
     },
     {
