@@ -32,9 +32,7 @@ const courseData = {
       overviewEn: "Setting the stage for postgraduate students and future educators. This session covers a quick interactive poll on AI usage in lesson planning, followed by an overview of shifting from general chatbots to source-grounded and persona-based educational agents.",
       overviewZh: "为研究生及未来的教师奠定基础。本节内容包括关于教案设计中 AI 使用情况的快速互动投票，随后概述如何从通用聊天机器人转向来源扎实且基于特定角色的教育智能体。",
       resources: [
-        { name: "Masterclass Slides (PDF)", url: "#", type: "pdf" },
-        { name: "KLUST AI Education Guidelines", url: "https://klust.edu.my/", type: "link" },
-        { name: "Session 1 Transcript (Markdown)", url: "https://drive.google.com/file/d/1NeVwAX6GyJx8BiKqZIPku6bNgPx0Ua2z/view?usp=sharing", type: "file" }
+        { name: "KLUST AI Education Guidelines", url: "https://klust.edu.my/", type: "link" }
       ],
       transcript: [
         { time: 0, textEn: "Welcome to the KLUST-Tongji Masterclass on AI-powered pedagogy.", textZh: "欢迎来到 KLUST-同济 AI 智能教学大师课。" },
