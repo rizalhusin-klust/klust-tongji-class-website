@@ -87,8 +87,8 @@ const courseData = {
     {
       id: "session-2-brief",
       tag: "Lab Brief",
-      titleEn: "Session 2: Hands-On Exercise Brief",
-      titleZh: "Session 2: 动手实践简报",
+      titleEn: "Exercise 1: Hands-on Exercise Brief",
+      titleZh: "Exercise 1: 动手实践简报",
       duration: 71, // seconds
       videoUrl: "videos/Step-by-Step Instructions_ Hands-On Practice Exercise.mp4",
       transcriptFileUrl: "https://drive.google.com/file/d/1b7TrBljQgGngPa2W5JEz7UWA1VNgAMFA/view?usp=sharing",
