@@ -61,8 +61,8 @@ const courseData = {
       titleEn: "A Teaching Framework",
       titleZh: "教学框架",
       isSubTab: true,
-      duration: 180, // seconds
-      videoUrl: "https://docs.google.com/presentation/d/1B1Z3eZ-9sY8p-d12mO5o-T8f3X0o7j6S-o0m0g9l0w4/embed?start=false&loop=false&delayms=3000",
+      duration: 155, // seconds
+      videoUrl: "videos/Understanding Learners & An Approach.mp4",
       overviewEn: "Introducing the core pedagogical framework for AI integration in future classrooms. This Google Slides presentation outlines lesson structuring, AI co-teacher guidelines, and student feedback loops. (You can replace this with your own Google Slides published embed URL in data.js).",
       overviewZh: "介绍未来课堂中 AI 整合的核心教学框架。本 Google Slides 演示文稿概述了课程结构、AI 助教指南和学生反馈闭环。（您可以在 data.js 中将此链接替换为您自己的 Google Slides 发布嵌入链接）。",
       resources: [
