@@ -153,6 +153,30 @@ const courseData = {
       ]
     },
     {
+      id: "session-2-brief",
+      tag: "Assignment",
+      titleEn: "Assignment Brief",
+      titleZh: "作业简报",
+      isSubTab: true,
+      duration: 122, // seconds
+      videoUrl: "videos/Malaysian Historical Cities Field Study - Briefing (1).mp4",
+      transcriptFileUrl: "https://drive.google.com/file/d/1b7TrBljQgGngPa2W5JEz7UWA1VNgAMFA/view?usp=sharing",
+      overviewEn: "This session provides a structured, hands-on walkthrough for your practice exercise. Follow step-by-step instructions to upload your syllabus, formulate prompts, and generate educational study guides using NotebookLM.",
+      overviewZh: "本节提供动手实践练习的结构化分步说明。遵循指导以上传您的教学大纲、设计提示词，并使用 NotebookLM 生成教育学习指南。",
+      resources: [
+        { name: "Project Brief NotebookLM (Bilingual PDF)", url: "resources/Project%20Brief%20NotebookLM(Bilingual).pdf", type: "pdf" },
+        { name: "Hands-on Exercise Slides (PPTX)", url: "resources/Step-by-Step%20Instructions_%20Hands-On%20Practice%20Exercise.pptx", type: "file" }
+      ],
+      transcript: [
+        { time: 0, textEn: "Welcome to this video on implementing source-grounded pedagogy using NotebookLM. We will guide you through a structured, hands-on workflow for your practice exercise.", textZh: "欢迎收看这期关于使用 NotebookLM 实施基于信源教学法的视频。我们将引导您完成一个结构化的、亲自动手的实践练习工作流。" },
+        { time: 8, textEn: "This session focuses on mastering an end-to-end studio workflow. You will gain experience in active document ingestion and generating reviews, moving from initial setup to verifying inline citations for reliable output.", textZh: "本节的重点是掌握端到端的工坊工作流。您将获得主动文档导入和生成评审的经验，从初始设置一直到验证行内引用以确保输出的可靠性。" },
+        { time: 23, textEn: "Step 1 is to prepare your workspace. Begin by opening NotebookLM, creating a new dedicated notebook for your module, and uploading your syllabus and core reference PDFs.", textZh: "第一步是准备您的工作区。首先打开 NotebookLM，为您的模块创建一个新的专用笔记本，并上传您的教学大纲和核心参考 PDF。" },
+        { time: 33, textEn: "In step 2, you will generate your study materials. Start by formulating prompts for specific learning outcomes, request a structural summary based on your sources, and finally, verify all citations to ensure accuracy.", textZh: "第二步，您将生成学习材料。首先针对特定的学习成果设计提示词，要求系统根据您的源材料生成结构化摘要，最后验证所有引用以确保准确性。" },
+        { time: 47, textEn: "For step 3, we will engage in active practice. You will have a 10-minute timer for your tasks. Please follow the provided lab documentation closely, and feel free to ask for assistance.", textZh: "第三步，我们将进行主动实践。您将有 10 分钟的时间来完成任务。请密切遵循提供的实验文档指南，如有疑问，请随时寻求协助。" },
+        { time: 58, textEn: "To wrap up, here are some final recommendations: ensure your files are in a compatible format, and remember that clear document structuring with headings will significantly improve the precision of your results.", textZh: "最后，这里有一些最终建议：确保您的文件格式兼容，并记住，带有清晰标题的文档结构将显著提高摘要结果的准确性。" }
+      ]
+    },
+    {
       id: "session-4",
       tag: "Session 4",
       titleEn: "Concluding & Discussion: Ethics, Guardrails & Future Classrooms",
@@ -175,30 +199,6 @@ const courseData = {
         { time: 38, textEn: "We should create clear guardrails and teach students ethical AI literacy.", textZh: "我们应该建立清晰的安全网，并教授学生合乎伦理的 AI 素养。" },
         { time: 44, textEn: "We will conclude with an open Q&A. Ask your final questions in the portal.", textZh: "最后我们将以开放式问答结束。请在门户中提出您的最终问题。" },
         { time: 50, textEn: "Thank you for joining. I hope these tools empower your future teaching careers.", textZh: "感谢大家的参与。我希望这些工具能为你们未来的教学事业赋能。" }
-      ]
-    },
-    {
-      id: "session-2-brief",
-      tag: "Assignment",
-      titleEn: "Assignment Brief",
-      titleZh: "作业简报",
-      isSubTab: true,
-      duration: 122, // seconds
-      videoUrl: "videos/Malaysian Historical Cities Field Study - Briefing (1).mp4",
-      transcriptFileUrl: "https://drive.google.com/file/d/1b7TrBljQgGngPa2W5JEz7UWA1VNgAMFA/view?usp=sharing",
-      overviewEn: "This session provides a structured, hands-on walkthrough for your practice exercise. Follow step-by-step instructions to upload your syllabus, formulate prompts, and generate educational study guides using NotebookLM.",
-      overviewZh: "本节提供动手实践练习的结构化分步说明。遵循指导以上传您的教学大纲、设计提示词，并使用 NotebookLM 生成教育学习指南。",
-      resources: [
-        { name: "Project Brief NotebookLM (Bilingual PDF)", url: "resources/Project%20Brief%20NotebookLM(Bilingual).pdf", type: "pdf" },
-        { name: "Hands-on Exercise Slides (PPTX)", url: "resources/Step-by-Step%20Instructions_%20Hands-On%20Practice%20Exercise.pptx", type: "file" }
-      ],
-      transcript: [
-        { time: 0, textEn: "Welcome to this video on implementing source-grounded pedagogy using NotebookLM. We will guide you through a structured, hands-on workflow for your practice exercise.", textZh: "欢迎收看这期关于使用 NotebookLM 实施基于信源教学法的视频。我们将引导您完成一个结构化的、亲自动手的实践练习工作流。" },
-        { time: 8, textEn: "This session focuses on mastering an end-to-end studio workflow. You will gain experience in active document ingestion and generating reviews, moving from initial setup to verifying inline citations for reliable output.", textZh: "本节的重点是掌握端到端的工坊工作流。您将获得主动文档导入和生成评审的经验，从初始设置一直到验证行内引用以确保输出的可靠性。" },
-        { time: 23, textEn: "Step 1 is to prepare your workspace. Begin by opening NotebookLM, creating a new dedicated notebook for your module, and uploading your syllabus and core reference PDFs.", textZh: "第一步是准备您的工作区。首先打开 NotebookLM，为您的模块创建一个新的专用笔记本，并上传您的教学大纲和核心参考 PDF。" },
-        { time: 33, textEn: "In step 2, you will generate your study materials. Start by formulating prompts for specific learning outcomes, request a structural summary based on your sources, and finally, verify all citations to ensure accuracy.", textZh: "第二步，您将生成学习材料。首先针对特定的学习成果设计提示词，要求系统根据您的源材料生成结构化摘要，最后验证所有引用以确保准确性。" },
-        { time: 47, textEn: "For step 3, we will engage in active practice. You will have a 10-minute timer for your tasks. Please follow the provided lab documentation closely, and feel free to ask for assistance.", textZh: "第三步，我们将进行主动实践。您将有 10 分钟的时间来完成任务。请密切遵循提供的实验文档指南，如有疑问，请随时寻求协助。" },
-        { time: 58, textEn: "To wrap up, here are some final recommendations: ensure your files are in a compatible format, and remember that clear document structuring with headings will significantly improve the precision of your results.", textZh: "最后，这里有一些最终建议：确保您的文件格式兼容，并记住，带有清晰标题的文档结构将显著提高摘要结果的准确性。" }
       ]
     }
   ],
