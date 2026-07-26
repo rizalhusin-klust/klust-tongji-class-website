@@ -96,6 +96,19 @@ const courseData = {
       ]
     },
     {
+      id: "session-2-gem-mamak",
+      tag: "Google Gem",
+      titleEn: "Google Gem - Mamak & Kopi Master",
+      titleZh: "Google Gem - 妈妈档与咖啡专家",
+      isSubTab: true,
+      duration: 120, // seconds
+      videoUrl: "videos/session-2.mp4", // placeholder
+      overviewEn: "Introducing the Custom Gemini Gem: Mamak & Kopi Master. This role-grounded assistant simulates Malaysian local coffee shop (Mamak) ordering, vocabulary, and localization culture. Designed as a hands-on pedagogical persona experiment.",
+      overviewZh: "介绍自定义 Gemini Gem：Mamak & Kopi 专家。这个特定角色助手模拟了马来西亚本地咖啡店（Mamak）的点单、词汇和本地化文化。被设计为亲自动手的教学角色实验。",
+      resources: [],
+      transcript: []
+    },
+    {
       id: "session-2-brief",
       tag: "Lab Brief",
       titleEn: "Exercise 1: Hands-on Exercise Brief",
