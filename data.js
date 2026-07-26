@@ -65,9 +65,7 @@ const courseData = {
       videoUrl: "videos/Understanding_Learners_and_An_Approach.mp4",
       overviewEn: "Introducing the core pedagogical framework for AI integration in future classrooms. This Google Slides presentation outlines lesson structuring, AI co-teacher guidelines, and student feedback loops. (You can replace this with your own Google Slides published embed URL in data.js).",
       overviewZh: "介绍未来课堂中 AI 整合的核心教学框架。本 Google Slides 演示文稿概述了课程结构、AI 助教指南和学生反馈闭环。（您可以在 data.js 中将此链接替换为您自己的 Google Slides 发布嵌入链接）。",
-      resources: [
-        { name: "Framework Reference Guide (PDF)", url: "#", type: "pdf" }
-      ],
+      resources: [],
       transcript: []
     },
     {
