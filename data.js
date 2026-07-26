@@ -179,9 +179,9 @@ const courseData = {
     },
     {
       id: "session-2-brief",
-      tag: "Lab Brief",
-      titleEn: "Exercise 1: Hands-on Exercise Brief",
-      titleZh: "Exercise 1: 动手实践简报",
+      tag: "Assignment",
+      titleEn: "Assignment Brief",
+      titleZh: "作业简报",
       isSubTab: true,
       duration: 122, // seconds
       videoUrl: "videos/Malaysian Historical Cities Field Study - Briefing (1).mp4",
