@@ -138,7 +138,8 @@ function initCourseOutline() {
     if (isCompleted) completedCount++;
 
     const item = document.createElement('div');
-    item.className = `agenda-item ${isActive ? 'active' : ''} ${isCompleted ? 'completed' : ''}`;
+    const isSub = session.isSubTab ? 'agenda-sub-item' : '';
+    item.className = `agenda-item ${isActive ? 'active' : ''} ${isCompleted ? 'completed' : ''} ${isSub}`;
     item.onclick = () => selectSession(session.id);
 
     // Dynamic Title & Tag based on active language
